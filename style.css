@@ -1,0 +1,249 @@
+
+.header {
+    background-color: rgba(144, 179, 214, 0.486);
+}
+.main {
+    background-color: rgba(243, 247, 252, 0.486);
+}
+.footer{
+    background-color: rgba(144, 179, 214, 0.486);
+}
+/* inicio navbar*/
+/* menu mobile icons*/
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+/* fim menu mobile icons*/
+.logo {
+    width: 80px;
+    padding: 5px;
+}
+div.navbar {
+    justify-content:end ;
+}
+form .btn {
+    color: black;
+    border-color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: rgb(95, 127, 175);
+}
+
+div.navbar nav a {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* Fim navbar*/
+
+/* Inicio Lançamentos */ 
+
+div.lancamentos-buttons {
+    width: 100%;
+    align-items:center;
+}
+.title {
+    font-weight: bold;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+div.mais-lancamentos{
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-outline-primary {
+    color: #000000;
+    border-color: #000000;
+}
+
+div.dropdowns {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+div.dropdown {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.corpo-card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px; 
+    
+}
+
+.card {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Fim Lançamentos */
+/* Inicio Plataformas */
+
+#card-plataformas {
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+
+/* Fim Plataformas */
+/* Inicio Publishers */
+#card-publishers {
+    margin-bottom: 10px;
+}
+
+
+/* Fim Publishers */
+
+.jogoPesquisado{
+    display: flex;
+    justify-content: center;
+}
+
+#jogoDetalhe h1{
+    text-align: center;
+    margin: 20px 20px;
+}
+#imagem img{
+    width: 100%;
+    margin: 20px 20px;
+}
+#imagem {
+    display: flex;
+    justify-content: center;
+}
+.info {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.screenshot{
+    margin-bottom: 10px;
+}
+/* Inicio Rodapé */
+
+div.editorial p {
+    margin-top: 20px;
+    align-items: center;
+    justify-content:center;
+}
+.copy{
+    text-align: center;
+}
+/* Fim Rodapé */
+
+
+/* Inicio layout mobile */
+@media screen and (min-width:0px) and (max-width:950px)  {
+    
+    .menu-icon {
+        display: block;
+        color: black;
+        width: 50px;
+        align-items: center;
+        right: 30px;
+    }
+    .menu-icon i{
+        font-size: 1.7em;
+    }
+    #menuToggle:checked ~ label i:nth-child(2) {
+        display: none;
+    }
+    #menuToggle:checked ~ label i:first-child {
+        display: block;
+    }
+    #menuToggle:not(checked) ~ label i:nth-child(2) {
+        display: block;
+    }
+    #menuToggle:not(checked) ~ label i:first-child {
+        display: none;
+    }
+    #menuToggle:checked ~ .nav{
+        display: none;
+    }
+    
+    .corpo-card, .publishers-title, .plataformas-title{
+        text-align: center;
+    }
+    
+
+
+    .lancamentos {
+        display: flex;
+        justify-content: center;
+    }
+    div.title_lancamentos h1{
+       display: flex;
+       justify-content: center;
+    }
+    div.dropdowns {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: center;
+    }
+
+    div.card-plataformas {
+        margin-left: 23px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        
+    }
+    div.card-Publishers {
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        
+    }
+    div.corpo-card {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        
+    }
+    div.corpo-card h3{
+        margin-right: 30px;
+        
+    }
+}
+
+@media screen and (min-width:768) and (max-width:1024px) {
+    .menu-icon {
+        display: block;
+        color: black;
+        width: 50px;
+        position: absolute;
+        top:-65px;
+        right: 30px;
+    }
+    .menu-icon i{
+        font-size: 1.7em;
+    }
+    #menuToggle:checked ~ label i:nth-child(2) {
+        display: none;
+    }
+    #menuToggle:checked ~ label i:first-child {
+        display: block;
+    }
+    #menuToggle:not(checked) ~ label i:nth-child(2) {
+        display: block;
+    }
+    #menuToggle:not(checked) ~ label i:first-child {
+        display: none;
+    }
+    #menuToggle:checked ~ .nav{
+        display: none;
+    }
+}
+/* Fim layout mobile */

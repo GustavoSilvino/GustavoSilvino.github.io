@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Trabalho Desenvolvimento Web">
+    <meta name="author" content="Gustavo Silvino">
+    <script src="https://kit.fontawesome.com/28fe38f80d.js" crossorigin="anonymous"></script>
+    <!--css bootstrap inicio-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+    <!--css bootstrap fim-->
+    <link rel="stylesheet" href="style.css">
+    <script src="JSpesquisa.js"></script>
+    <script src="detalhes.js"></script>
+    <title>Ingaming World - pesquisa</title>
+</head>
+<body>
+<header class="container-fluid header">
+    <!--inicio cabeçalho com logo e barra de navegação-->
+    <div class="row navbar-logo">
+        <div class="col-3 col-sm-2 col-md-2 col-lg-1 logo">
+           <img src="images/logo.png" alt="logo ingaming" class="logo">
+        </div>
+        
+        <div class="col-8 col-sm-10 col-md-10 col-lg-11  navbar">
+            <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="menu-icon" >
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times-circle"></i>
+                </label>
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Pagina Inicial</a>
+                    <form class="form-inline">
+                        <input class="form-control me-2" type="search" id="inputPesquisa" placeholder="Pesquisar Jogo" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="pesquisaNovo()">Pesquisar jogos</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- fim cabeçalho com logo e barra de navegação-->
+</header>
+<main class="container main">
+    <!--Fim Carrosel Destaques-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12  title">
+                <h1>Jogos Encontrados</h1>
+            </div>
+            <div class="col-12" id="AreaPesquisa">
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="container-fluid footer">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-lg-12">
+            <h1>Sobre</h1>
+            <p>Ingaming World é um site de especializado em jogos feito exclusivamente para um trabalho de faculdade de Desenvolvimento Web, materia do curso de Sistemas de Informação da Pontifícia Universidade Católica de Minas Gerais - PUCMINAS.</p>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-12 editorial">
+            <h1>Dados:</h1>
+            <p><b>Nome:</b> Gustavo Silvino de Souza
+            <b>Curso:</b> Sistemas de Informação - 1º Período
+            <b>Matricula:</b> 796662
+            <b>Professor: </b> Rommel Vieira</p>
+        </div>
+    </div>
+    <div class="row copy ">
+        <div class="col-12">
+            <p>Copyright 2020 - Disciplina de Desenvolvimento Web</p>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+    onload = () => {
+    const urlParams = new URLSearchParams(location.search)
+    let pesquisado = urlParams.get('search')
+    pesquisaJogo(pesquisado)
+}
+</script>
+<!--JS bootstrap inicio-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-
+J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-
+Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-
+wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!--JS bootstrap Fim-->
+</body>
+</html>
