@@ -119,9 +119,11 @@ div.dropdown {
     width: 100%;
     margin: 20px 20px;
 }
+
 #imagem {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .info {
     display: flex;
@@ -129,8 +131,14 @@ div.dropdown {
     flex-wrap: wrap;
 }
 
-.screenshot{
-    margin-bottom: 10px;
+#screenshot{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#screenshot img {
+    margin:5px;
+    padding: 0px;
 }
 /* Inicio Rodapé */
 

@@ -27,7 +27,7 @@ async function pesquisaJogo(pesquisado){
     let jogosEncontrados = 0
     let str = ''
         while (encontrouAlgo == false) {
-            document.getElementById("AreaPesquisa").innerHTML = "<h3>PRORURANDO...</h3>"
+            document.getElementById("AreaPesquisa").innerHTML = "<h3>PROCURANDO...</h3>"
             if(jogosEncontrados == 4) {
                 encontrouAlgo = true
             }
